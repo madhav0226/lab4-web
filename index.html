@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Capital Lookup</title>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <header class="card-header">
+                <span class="badge">Lab Assignment</span>
+                <h1>Country & Capital Selector</h1>
+                <p class="subtitle">Select a country from the dropdown to discover its capital city.</p>
+            </header>
+
+            <div class="interactive-panel">
+                <!-- Country Selection Box -->
+                <div class="form-group">
+                    <label for="countrySelect">Choose a Country:</label>
+                    <div class="select-wrapper">
+                        <select id="countrySelect" aria-label="Select a country">
+                            <option value="" disabled selected>-- Select a Country --</option>
+                            <option value="Paris">France 🇫🇷</option>
+                            <option value="Tokyo">Japan 🇯🇵</option>
+                            <option value="New Delhi">India 🇮🇳</option>
+                            <option value="Canberra">Australia 🇦🇺</option>
+                            <option value="Ottawa">Canada 🇨🇦</option>
+                        </select>
+                        <span class="select-arrow">▼</span>
+                    </div>
+                </div>
+
+                <!-- Capital Output Display (Next to the list) -->
+                <div class="output-group">
+                    <span class="output-label">Capital City:</span>
+                    <div id="capitalDisplay" class="capital-box">
+                        <span id="capitalText" class="capital-text placeholder">None selected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
